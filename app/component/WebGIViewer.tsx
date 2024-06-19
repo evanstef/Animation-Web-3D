@@ -104,7 +104,7 @@ const WebGIViewer = forwardRef((props : any, ref) => {
     await viewer.addPlugin(GammaCorrectionPlugin)
     // await viewer.addPlugin(SSRPlugin)
     // await viewer.addPlugin(SSAOPlugin)
-    // await viewer.addPlugin(BloomPlugin)
+    await viewer.addPlugin(BloomPlugin)
 
     viewer.renderer.refreshPipeline()
 
@@ -194,7 +194,7 @@ const WebGIViewer = forwardRef((props : any, ref) => {
 
 
   return (
-    <div ref={canvasContainerRef} className='w-screen h-screen fixed z-10 flex justify-end flex-col items-center top-0 pointer-events-none min-h-[831px] bg-transparent'  id='canvar-web-gi-container'>
+    <div ref={canvasContainerRef} className='w-full h-full fixed z-10 flex justify-end flex-col items-center top-0 pointer-events-none min-h-[831px] bg-transparent'  id='canvar-web-gi-container'>
       <canvas className="w-full h-full bg-transparent" id="canvas" ref={canvasRef} />
       {
         preview && (
