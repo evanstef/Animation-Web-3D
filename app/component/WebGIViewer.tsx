@@ -12,7 +12,6 @@ import {
     BloomPlugin,
     GammaCorrectionPlugin,
     addBasePlugins,
-    FileTransferPlugin,
     mobileAndTabletCheck,
     // Color, // Import THREE.js internals
     // Texture, // Import THREE.js internals
@@ -106,8 +105,6 @@ const WebGIViewer = forwardRef((props : any, ref) => {
     // await viewer.addPlugin(SSRPlugin)
     await viewer.addPlugin(SSAOPlugin)
     await viewer.addPlugin(BloomPlugin)
-
-    await viewer.addPlugin(FileTransferPlugin)
 
     viewer.renderer.refreshPipeline()
 
