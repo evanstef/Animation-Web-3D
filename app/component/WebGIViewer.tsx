@@ -13,12 +13,6 @@ import {
     GammaCorrectionPlugin,
     addBasePlugins,
     mobileAndTabletCheck,
-    AssetManagerBasicPopupPlugin,
-    CanvasSnipperPlugin,
-    FileTransferPlugin,
-    IViewerApp,
-    TweakpaneUiPlugin,
-    IViewerPlugin
     // Color, // Import THREE.js internals
     // Texture, // Import THREE.js internals
 } from "webgi";
