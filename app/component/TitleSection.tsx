@@ -41,7 +41,7 @@ const TitleSection = () => {
     })
    }, {scope: container})
   return (
-    <div ref={container} className='flex flex-col justify-center items-center mt-5 space-y-2 md:space-y-3 title-section'>
+    <div ref={container} className='flex flex-col justify-center items-center mt-5 space-y-2 md:space-y-3 title-section  md:mb-[600px] mb-[500px]' >
         <h1 className='text1 text-5xl md:text-7xl font-bold bg-gradient-to-r from-red-700 via-green-700 to-blue-700 text-transparent bg-clip-text'>Vortex GT-8</h1>
         <div className='text-2xl md:text-7xl font-bold flex gap-6'>
           <div className='text2 flex gap-1'>
