@@ -78,7 +78,7 @@ const WebGIViewer = forwardRef((props : any, ref) => {
   const setupViewer = useCallback(async () => {
     
     const viewer : any = new ViewerApp({
-        canvas : document.getElementById("canvas") as HTMLCanvasElement,
+        canvas : canvasRef.current,
     })
 
     setViewerRef(viewer)
