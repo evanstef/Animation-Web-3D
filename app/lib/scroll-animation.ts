@@ -13,9 +13,9 @@ export const scrollAnimation = (position : any, target : any, isMobile : any ,on
     let tl = gsap.timeline()
 
     tl.to(position, {
-        x: isMobile ? 3.97 : 0.93,
-        y: isMobile ? 8.87 : 5.03,
-        z: isMobile ? 4.28 : 3.33,
+        x: isMobile ? 3.97 : 2.99,
+        y: isMobile ? 8.87 : 9.19,
+        z: isMobile ? 4.28 : 6.10,
         scrollTrigger : {
             trigger : '.section-dua',
             start : 'top bottom',
@@ -25,9 +25,9 @@ export const scrollAnimation = (position : any, target : any, isMobile : any ,on
         },
         onUpdate
     }).to(target, {
-        x: isMobile ? -1.52 : -2.11,
-        y: isMobile ? 1.20 : 0.53,
-        z: isMobile ? -0.37 : 1.09,
+        x: isMobile ? -1.52 : -1.67,
+        y: isMobile ? 1.20 : 0.24,
+        z: isMobile ? -0.37 : 1.02,
         scrollTrigger : {
             trigger : '.section-dua',
             start : 'top bottom',
