@@ -1,12 +1,13 @@
 "use client"
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import dynamic from 'next/dynamic'
 import Wrapper from './Wrapper'
 import TitleSection from './TitleSection'
 import AboutSection from './AboutSection'
 import OtherSection from './OtherSection'
 import LastSection from './LastSection'
+
 
 const WebGIViewer = dynamic(() => import('./WebGIViewer'), { ssr: false })
 
@@ -15,8 +16,16 @@ const AllComponent = () => {
   const containeRef = useRef<any>(null)
 
   function handlePreview() {
-    webgiViewer.current.triggerPreview()
+    if (webgiViewer.current) {
+        webgiViewer.current.triggerPreview();
+      } else {
+        console.log('webgiViewer.current is null');
+      }
   }
+
+//   useEffect(() => {
+//     console.log('WebGIViewer ref:', webgiViewer.current);
+//   }, []);
 
   return (
     <div>

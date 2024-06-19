@@ -103,7 +103,7 @@ const WebGIViewer = forwardRef((props : any, ref) => {
     await viewer.addPlugin(new TonemapPlugin(true))
     await viewer.addPlugin(GammaCorrectionPlugin)
     // await viewer.addPlugin(SSRPlugin)
-    await viewer.addPlugin(SSAOPlugin)
+    // await viewer.addPlugin(SSAOPlugin)
     await viewer.addPlugin(BloomPlugin)
 
     viewer.renderer.refreshPipeline()

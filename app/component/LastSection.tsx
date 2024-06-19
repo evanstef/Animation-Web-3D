@@ -58,7 +58,7 @@ const LastSection = ({triggerPreview } : Props) => {
         <p className='text2 text-center text-xs md:text-base'></p>
         <div className='flex gap-5 md:gap-10 button text-xs md:text-base'>
           <button onClick={scrollToTop} className='button1 bg-green-700 px-2 md:px-4 py-1 rounded-full'>Back To Top</button>
-          <button onClick={() => triggerPreview()} className='button2 bg-white px-2 md:px-4 py-1 rounded-full text-black'>Wanna Try!</button>
+          {/* <button onClick={() => triggerPreview()} className='button2 bg-white px-2 md:px-4 py-1 rounded-full text-black'>Wanna Try!</button> */}
         </div>
       </div>
     </div>
