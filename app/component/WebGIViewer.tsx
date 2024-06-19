@@ -194,8 +194,8 @@ const WebGIViewer = forwardRef((props : any, ref) => {
 
 
   return (
-    <div ref={canvasContainerRef} className='w-screen h-screen fixed z-10 flex justify-end flex-col items-center top-0 pointer-events-none bg-transparent'  id='canvar-web-gi-container'>
-      <canvas className="w-full h-full bg-transparent" id="canvas" ref={canvasRef} />
+    <div ref={canvasContainerRef} className='w-screen h-screen fixed z-20 flex justify-end flex-col items-center top-0 pointer-events-none bg-transparent'  id='canvar-web-gi-container'>
+      <canvas className="w-full h-full bg-transparent z-50" id="canvas" ref={canvasRef} />
       {
         preview && (
           <button onClick={() => handleExit()} className='bg-green-700 px-4 py-1 rounded-full absolute cursor-pointer z-20 top-8 min-w-7 text-center'>Exit Preview</button>
