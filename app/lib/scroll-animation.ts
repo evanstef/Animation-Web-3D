@@ -1,9 +1,15 @@
 "use client"
 
 import gsap from "gsap";
-
+import { useEffect } from "react";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 export const scrollAnimation = (position : any, target : any, isMobile : any ,onUpdate : any) => {
+
+    if (typeof window !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+      }
+
     let tl = gsap.timeline()
 
     tl.to(position, {
