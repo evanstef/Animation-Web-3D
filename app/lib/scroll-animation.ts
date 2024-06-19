@@ -13,9 +13,9 @@ export const scrollAnimation = (position : any, target : any, isMobile : any ,on
     let tl = gsap.timeline()
 
     tl.to(position, {
-        x: isMobile ? 3.97 : 2.99,
-        y: isMobile ? 8.87 : 9.19,
-        z: isMobile ? 4.28 : 6.10,
+        x: isMobile ? 3.97 : 4.29,
+        y: isMobile ? 8.87 : 10.74,
+        z: isMobile ? 4.28 : 6.21,
         scrollTrigger : {
             trigger : '.section-dua',
             start : 'top bottom',
@@ -25,9 +25,9 @@ export const scrollAnimation = (position : any, target : any, isMobile : any ,on
         },
         onUpdate
     }).to(target, {
-        x: isMobile ? -1.52 : -1.67,
-        y: isMobile ? 1.20 : 0.24,
-        z: isMobile ? -0.37 : 1.02,
+        x: isMobile ? -1.52 : -2.23,
+        y: isMobile ? 1.20 : 0.34,
+        z: isMobile ? -0.37 : 1.56,
         scrollTrigger : {
             trigger : '.section-dua',
             start : 'top bottom',
@@ -45,9 +45,9 @@ export const scrollAnimation = (position : any, target : any, isMobile : any ,on
             scrub : true,
         },
     }).to(position, {
-        x: isMobile ? 4.98 : 4.59,
-        y: isMobile ? 4.46 : 2.71,
-        z: isMobile ? 4.22 : 0.83,
+        x: isMobile ? 4.98 : 10.41,
+        y: isMobile ? 4.46 : 6.75,
+        z: isMobile ? 4.22 : 3.61,
         scrollTrigger : {
             trigger : ".section-tiga",
             start : 'top bottom',
@@ -57,9 +57,9 @@ export const scrollAnimation = (position : any, target : any, isMobile : any ,on
         },
         onUpdate
     }).to(target, {
-        x: isMobile ? 0.21 : -0.396,
-        y: isMobile ? 0.50 : -0.071,
-        z: isMobile ? -1.007 : -2.09,
+        x: isMobile ? 0.21 : 0.75,
+        y: isMobile ? 0.50 : 0.68,
+        z: isMobile ? -1.007 : -2.86,
         scrollTrigger : {
             trigger : ".section-tiga",
             start : 'top bottom',
@@ -68,9 +68,9 @@ export const scrollAnimation = (position : any, target : any, isMobile : any ,on
             immediateRender : false,
         },
     }).to(position, {
-        x: isMobile ? -0.016 : -0.0563722572,
-        y: isMobile ? 3.58 : 2.0565331984,
-        z: isMobile ? 3.40 : 2.54092291,
+        x: isMobile ? -0.016 : -0.083,
+        y: isMobile ? 3.58 : 6.34,
+        z: isMobile ? 3.40 : 3.72,
         scrollTrigger : {
             trigger : ".section-empat",
             start : 'top bottom',
@@ -80,9 +80,9 @@ export const scrollAnimation = (position : any, target : any, isMobile : any ,on
         },
         onUpdate
     }).to(target, {
-        x: isMobile ? -0.01 : -0.0115624336,
-        y: isMobile ? -0.244 : 0.2188733977,
-        z: isMobile ? -0.49 : -0.8279345944,
+        x: isMobile ? -0.01 : -0.081,
+        y: isMobile ? -0.244 : -0.75,
+        z: isMobile ? -0.49 : -1.14,
         scrollTrigger : {
             trigger : ".section-empat",
             start : 'top bottom',
