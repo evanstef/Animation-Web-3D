@@ -23,7 +23,7 @@ const OtherSection = () => {
   }, {scope: container})
 
   return (
-    <div ref={container} className='section-tiga md:flex md:justify-end mb-[550px] md:mb-40'>
+    <div ref={container} className='section-tiga md:flex md:justify-end mb-[300px] md:mb-40'>
       <div className='md:w-1/2 trigger'>
             <h1 className='text-5xl md:text-8xl font-bold bg-gradient-to-r from-red-700 via-green-700 to-blue-700 text-transparent bg-clip-text'>Vortex GT-8</h1>
             <div className='text-xs md:text-base space-y-4 md:space-y-9 ini-content'>

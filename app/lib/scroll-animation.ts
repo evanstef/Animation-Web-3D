@@ -68,9 +68,9 @@ export const scrollAnimation = (position : any, target : any, isMobile : any ,on
             immediateRender : false,
         },
     }).to(position, {
-        x: isMobile ? -0.016 : -0.083,
-        y: isMobile ? 3.58 : 6.34,
-        z: isMobile ? 3.40 : 3.72,
+        x: isMobile ? -0.00 : -0.083,
+        y: isMobile ? 15.20 : 6.34,
+        z: isMobile ? 8.24 : 3.72,
         scrollTrigger : {
             trigger : ".section-empat",
             start : 'top bottom',
@@ -80,9 +80,9 @@ export const scrollAnimation = (position : any, target : any, isMobile : any ,on
         },
         onUpdate
     }).to(target, {
-        x: isMobile ? -0.01 : -0.081,
-        y: isMobile ? -0.244 : -0.75,
-        z: isMobile ? -0.49 : -1.14,
+        x: isMobile ? 0.02 : -0.081,
+        y: isMobile ? 1.07 : -0.75,
+        z: isMobile ? -1.54 : -1.14,
         scrollTrigger : {
             trigger : ".section-empat",
             start : 'top bottom',

@@ -110,7 +110,7 @@ const WebGIViewer = forwardRef((props : any, ref) => {
 
 
     // Import and add a GLB file.
-    await manager.addFromPath("vortex.glb")
+    await manager.addFromPath("scene.glb")
 
 
     // // buat ilangin background
@@ -121,8 +121,8 @@ const WebGIViewer = forwardRef((props : any, ref) => {
 
     // pengecekan bila posisi dan target awal 3d model bila berada di mode mobile
     if(isMobileOrTablet) {
-      position.set(0.0236904186, 15.21, 11.7209968833)
-      target.set(0.0128017594, 0.4913113388, -0.6224250840)
+      position.set(-0.03, 15.17, 8.41)
+      target.set(-0.03, 0.98, -1.41)
     }
     
     window.scrollTo(0, 0)

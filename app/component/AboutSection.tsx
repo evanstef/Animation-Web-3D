@@ -36,7 +36,7 @@ const AboutSection = () => {
     })
   }, {scope: container})
   return (
-    <div ref={container} className='mt-[500px] mb-[550px] md:mt-[600px] md:mb-40 section-dua'>
+    <div ref={container} className=' mb-[550px] md:mb-40 section-dua'>
     <div className='ini-content'>
     <h1 className='text1 text-5xl md:text-8xl font-bold bg-gradient-to-r from-red-700 via-green-700 to-blue-700 text-transparent bg-clip-text'>Vortex GT-8</h1>
     <div className='paragraf text-xs md:text-base'>

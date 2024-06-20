@@ -19,9 +19,10 @@ const LastSection = ({triggerPreview } : Props) => {
     let tl = gsap.timeline({
       scrollTrigger : {
         trigger : ".trigger",
-        start : "230px center",
+        start : "top center",
         end : "center top",
         toggleActions : "play none none reverse",
+        markers : true,
       }
     })
 
@@ -52,7 +53,7 @@ const LastSection = ({triggerPreview } : Props) => {
       };
 
   return (
-    <div ref={container} className='mb-[550px] md:mb-[500px] section-empat '>
+    <div ref={container} className='mb-[350px] md:mb-[500px] section-empat '>
       <div className='trigger space-y-3 md:space-y-9 flex flex-col justify-center items-center'>
         <h1 className='text1 text-5xl md:text-8xl font-bold bg-gradient-to-r from-red-700 via-green-700 to-blue-700 text-transparent bg-clip-text'>Vortex GT-8</h1>
         <p className='text2 text-center text-xs md:text-base'></p>
