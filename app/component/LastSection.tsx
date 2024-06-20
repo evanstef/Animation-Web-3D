@@ -22,7 +22,6 @@ const LastSection = ({triggerPreview } : Props) => {
         start : "top center",
         end : "center top",
         toggleActions : "play none none reverse",
-        markers : true,
       }
     })
 

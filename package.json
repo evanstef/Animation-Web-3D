@@ -20,12 +20,12 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/three": "^0.139.0",
-    "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
+    "webgi": "https://dist.pixotronics.com/webgi/runtime/bundle-0.9.11.tgz",
+	  "@types/webgi": "https://dist.pixotronics.com/webgi/runtime/bundle-types-0.9.11.tgz",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5",
-    "webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-0.5.5.tgz"
+    "typescript": "^5"
   }
 }

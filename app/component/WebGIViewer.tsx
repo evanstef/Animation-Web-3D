@@ -10,9 +10,14 @@ import {
     SSRPlugin,
     SSAOPlugin,
     BloomPlugin,
+    AnimationAction,
     GammaCorrectionPlugin,
     addBasePlugins,
     mobileAndTabletCheck,
+    CanvasSnipperPlugin,
+    AssetManagerBasicPopupPlugin,
+    TweakpaneUiPlugin,
+    IViewerPlugin
     // Color, // Import THREE.js internals
     // Texture, // Import THREE.js internals
 } from "webgi";
@@ -99,7 +104,7 @@ const WebGIViewer = forwardRef((props : any, ref) => {
     setTargetRef(target)
 
     // await viewer.addPlugin(GBufferPlugin)
-    // await viewer.addPlugin(new ProgressivePlugin(32))
+    await viewer.addPlugin(new ProgressivePlugin(32))
     await viewer.addPlugin(new TonemapPlugin(true))
     await viewer.addPlugin(GammaCorrectionPlugin)
     // await viewer.addPlugin(SSRPlugin)
@@ -109,8 +114,28 @@ const WebGIViewer = forwardRef((props : any, ref) => {
     viewer.renderer.refreshPipeline()
 
 
+    // // Import and add a GLB file.
+    // await manager.addFromPath("scene.glb")
+
+    // or use this to add all main ones at once.
+    // await addBasePlugins(viewer) // check the source: https://codepen.io/repalash/pen/JjLxGmy for the list of plugins added.
+
+    // Add a popup(in HTML) with download progress when any asset is downloading.
+    // await viewer.addPlugin(AssetManagerBasicPopupPlugin)
+
+    // // Required for downloading files from the UI
+    // await viewer.addPlugin(FileTransferPlugin)
+
+    // // Add more plugins not available in base, like CanvasSnipperPlugin which has helpers to download an image of the canvas.
+    // await viewer.addPlugin(CanvasSnipperPlugin)
+
     // Import and add a GLB file.
-    await manager.addFromPath("scene.glb")
+    await viewer.load("vortex.glb")
+
+    // matikan ui
+    
+    // Load an environment map if not set in the glb file
+    // await viewer.setEnvironmentMap("./assets/environment.hdr");
 
 
     // // buat ilangin background
@@ -118,6 +143,8 @@ const WebGIViewer = forwardRef((props : any, ref) => {
 
     // supaya user tidak bisa merotate 3d model nya
     viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false })
+
+    
 
     // pengecekan bila posisi dan target awal 3d model bila berada di mode mobile
     if(isMobileOrTablet) {
@@ -140,6 +167,9 @@ const WebGIViewer = forwardRef((props : any, ref) => {
         needsUpdate = false
       }
     })
+
+    viewer.removeEventListener('preFrame')
+    // Hentikan semua animasi
 
   
     memorizedScrollAnimation(position, target, isMobile , onUpdate)
